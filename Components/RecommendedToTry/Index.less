@@ -1,0 +1,94 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.recommendedToTry {
+  padding: 0 20px;
+}
+.recommendedToTry-flexProductsWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.recommendedToTry-product {
+  margin-top: 17px;
+  cursor: pointer;
+}
+.recommendedToTry-productImage {
+  width: 100px;
+  height: 135px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 11px;
+  > img {
+    align-self: center;
+    max-width: 100px;
+    max-height: 135px;
+  }
+}
+.recommendedToTry-productName {
+  width: 125px;
+  margin: auto;
+  padding-left: 21px;
+  display: block;
+  font-family: 'Circe', sans-serif;
+  font-weight: 600;
+  font-size: @fontSize-smallest;
+  color: @color-defaultText;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-transform: uppercase;
+  line-height: @lineHeight-small;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.recommendedToTry-product--active {
+  opacity: 1 !important;
+  > .recommendedToTry-productName {
+    text-decoration: none;
+  }
+}
+.recommendedToTry-informationBlock {
+  border: 1px solid @color-defaultBorder;
+  width: 93%;
+  margin: auto;
+  margin-top: 30px;
+  display: none;
+}
+.recommendedToTry-informationBlockArrow {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  bottom: 6px;
+  background-color: @color-defaultBackground;
+  border-left: 1px solid @color-defaultBorder;
+  border-top: 1px solid @color-defaultBorder;
+  transform: rotate(45deg);
+}
+.recommendedToTry-informationBlockDescription {
+  width: 69%;
+  padding: 30px 0 30px 27px;
+}
+.recommendedToTry-informationBlockText {
+  font-size: @fontSize-smallest;
+  line-height: @lineHeight-base;
+  letter-spacing: @letterSpacing-large;
+  padding-right: 100px;
+}
+.recommendedToTry-informationBlockSubtitle {
+  font-size: @fontSize-larger;
+  font-family: Circe,sans-serif;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+.recommendedToTry-informationBlockLink {
+  margin-top: 23px;
+  > a, a:hover, a:active, a:visited {
+    font-family: 'Circe', sans-serif;
+    font-size: @fontSize-smaller;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: @color-brandPrimary;
+  }
+}

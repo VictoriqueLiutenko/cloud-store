@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar layout-contentPadding">
+        <h1 class="title">Подтверждение подписки</h1>
+        <section>
+          <h3 class="subscriptionSettings-subtitle">
+            Проверьте пареметры подключения
+          </h3>
+          <p class="subscriptionSettings-text">
+            Вы подключаете «iMind Вебинар» за 1 490 рублей в месяц.
+          </p>
+          <p class="subscriptionSettings-text">
+            После подключения с Вашего счета будет списано: 
+            <span class="subscriptionSettings-chargeDetailsCost">
+              1 490 рублей.
+            </span>
+            Затем Вы получите параметры для входа на сайт продукта, и подписка станет активной. 
+          </p>
+        </section>
+        <section>
+          <h3 class="subscriptionSettings-subtitle subscriptionSettings-subtitle--differentMargin">
+            Укажите дополнительную информацию
+          </h3>
+          <form name="formCustomer" action="#">
+            <div class="subscriptionSettings-formCustomer">
+              <div class="formInput">
+                <label for="personalCodeApply" class="formInput-label formInput-label--wide">
+                  Введите код купона
+                </label>
+                <input
+                  type="text" 
+                  name="personalCode" 
+                  id="personalCodeApply" 
+                  class="formInput-input formInput-input--narrow"
+                >
+                <span class="subscriptionSettings-personalCodeStatus">
+                  <a href="#" class=" subscriptionSettings-personalCodeStatusApply">Применить код</a>
+                </span>
+              </div>
+              <div class="formInput">
+                <label for="personalCodeValidation" class="formInput-label formInput-label--wide">
+                  Введите код купона
+                </label>
+                <input
+                  type="text" 
+                  name="personalCode" 
+                  id="personalCodeValidation" 
+                  class="formInput-input formInput-input--narrow"
+                >
+                <span class="subscriptionSettings-personalCodeStatus">
+                  <span class="subscriptionSettings-personalCodeStatusValidationImage"></span>
+                  <span class="subscriptionSettings-personalCodeStatusValidationText">
+                    Проверка кода
+                  </span>
+                </span>
+              </div>
+              <div class="formInput">
+                <label for="personalCodeInvalid" class="formInput-label formInput-label--wide">
+                  Введите код купона
+                </label>
+                <input
+                  type="text" 
+                  name="personalCode" 
+                  id="personalCodeInvalid" 
+                  class="formInput-input formInput-input--narrow"
+                >
+                <span class="subscriptionSettings-personalCodeStatus">
+                  <span class="subscriptionSettings-personalCodeStatusInvalidImage"></span>
+                  <span class="subscriptionSettings-personalCodeStatusInvalidText">
+                    Неверный код
+                  </span>
+                </span>
+              </div>
+              <div class="formInput">
+                <label for="personalCodeAccepted" class="formInput-label formInput-label--wide">
+                  Введите код купона
+                </label>
+                <input
+                  type="text" 
+                  name="personalCode" 
+                  id="personalCodeAccepted" 
+                  class="formInput-input formInput-input--narrow"
+                >
+                <span class="subscriptionSettings-personalCodeStatus">
+                  <span class="subscriptionSettings-personalCodeStatusAcceptedImage"></span>
+                  <span class="subscriptionSettings-personalCodeStatusAcceptedText">
+                    Код принят
+                  </span>
+                </span>
+              </div>
+              <div class="dashboardForm-hint">Если Вам известен код промо-купона, то укажите его здесь.</div>
+              <div class="formInput">
+                <label for="E-mail" class="formInput-label">Ваш e-mail</label>
+                <input type="email" name="E-mail" id="E-mail" class="formInput-input">
+              </div>
+              <div class="formInput">
+                <label for="password" class="formInput-label">Пароль для входа в iMind</label>
+                <input type="password" name="password" id="password" class="formInput-input">
+              </div>
+              <div class="dashboardForm-hint">Данный пароль будет использоваться для доступа к сервису.</div>
+              <div class="formInput">
+                <label for="userName" class="formInput-label">Ваше имя в iMind</label>
+                <input type="text" name="userName" id="puserName" class="formInput-input">
+              </div>
+              <div class="dashboardForm-hint">Его увидят другие участники конференции.</div>
+              <div class="formInput">
+                <label for="usersCount" class="formInput-label">Кол-во пользователей</label>
+                <select name="usersCount" id="usersCount" class="formInput-input formInput-input--select">
+                  <option>До 25 чел. — 1 490 Руб.</option>
+                </select>
+              </div>
+              <div class="formInput">
+                <label for="tariff" class="formInput-label">Тарифный план</label>
+                <select
+                  name="tariff" 
+                  id="tariff" 
+                  class="js-tariffOption formInput-input formInput-input--select"
+                >
+                  <option selected disabled>Не выбран</option>
+                  <option data-target="js-tariffFeatureProfessional">Профессиональный — 2 900 руб</option>
+                  <option data-target="js-tariffFeatureOptimal">Оптимальный — 1 900 руб</option>
+                </select>
+              </div>
+            </div>
+            <div class="js-tariffFeatures">
+              <div class="tariffFeatures js-tariffFeatureProfessional">
+                <span class="tariffFeatures-blockArrow"></span>
+                <h4 class="tariffFeatures-header">
+                  Параметры тарифа
+                </h4>
+                <div class="tariffFeatures-parameters">
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Кол-во пользователей
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      5
+                    </div>
+                  </div>
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Кол-во юр. лиц
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      до 10
+                    </div>
+                  </div>
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Объем дискового пространства
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      2000 мб
+                    </div>
+                  </div>
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Стоимость
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      2900 Руб/мес
+                    </div>
+                  </div>
+                </div>
+                <h4 class="tariffFeatures-header">
+                    Преимущества
+                </h4>
+                <div class="tariffFeatures-list">
+                  <ul>
+                    <li>
+                      Характеристики и дополнительние поля
+                    </li>
+                    <li>
+                      Собственные шаблоны документов
+                    </li>
+                    <li>
+                      CRM (управление клиентами)
+                    </li>
+                    <li>
+                      Управление правами пользователей
+                    </li>
+                    <li>
+                      Адресное хранение
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tariffFeatures js-tariffFeatureOptimal">
+                <span class="tariffFeatures-blockArrow"></span>
+                <h4 class="tariffFeatures-header">
+                  Параметры тарифа
+                </h4>
+                <div class="tariffFeatures-parameters">
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Кол-во пользователей
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      2
+                    </div>
+                  </div>
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Объем дискового пространства
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      1000 мб
+                    </div>
+                  </div>
+                  <div class="tariffFeatures-parameter">
+                    <div class="tariffFeatures-parameterName">
+                      Стоимость
+                    </div>
+                    <div class="tariffFeatures-parameterProperty">
+                      1900 Руб/мес
+                    </div>
+                  </div>
+                </div>
+                <h4 class="tariffFeatures-header">
+                    Преимущества
+                </h4>
+                <div class="tariffFeatures-list">
+                  <ul>
+                    <li>
+                      Характеристики и дополнительние поля
+                    </li>
+                    <li>
+                      Адресное хранение
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="subscriptionSettings-formCustomer">
+              <div class="formInput--checkbox formInput--checkboxNarrowInOneLine">
+                <input
+                  type="checkbox" 
+                  name="accept" 
+                  id="accept" 
+                  class="formInput-input--checkbox js-invisibleCheckbox"
+                  >
+                <span class="checkbox-icon js-checkboxIcon"></span>
+                <label for="accept" class="formInput-label--checkbox">
+                  Я принимаю условия <a href="#">договора оферты</a>
+                </label>
+              </div>
+              <div class="dashboardForm-submit dashboardForm-submit--wideWithMargin">
+                <input type="submit" value="Подключить" class="buttonPrimary">
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="sidebar sidebar--alignedWithHeader">
+        <div class="sidebar-image--small">
+          <img src="../assets/images/image-nod32.png">
+        </div>
+        <div class="sidebar-subscriptionProductName">
+          ESET NOD32 Антивирус лицензия на 3 ПК
+        </div>
+        <div class="sidebar-border"></div>
+        <a href="#" class="sidebar-link js-sidebarHintLink">
+          Для чего нужен e-mail?
+        </a>
+        <div class="sidebar-hint js-sidebarHint">
+          На указанный e-mail придет письмо с данными для скачвания и активации ПО.
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

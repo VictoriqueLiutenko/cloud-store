@@ -1,0 +1,42 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.catalogLeftMenu {
+  width: 280px;
+  padding-top: 64px;
+  float: left;
+  > nav {
+    > ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      width: 70%;
+      margin: auto;
+      padding: 0;
+      > li {
+        list-style-type: none;
+        font-size: @fontSize-base;
+        font-weight: 400;
+        letter-spacing: @letterSpacing-micro;
+        line-height: @lineHeight-larger;
+        margin-bottom: 9px;
+        margin-left: 7px;
+      }
+    }
+  }
+}
+.catalogLeftMenu-a {
+  color: @color-defaultText;
+  text-decoration: underline;
+  font-size: @fontSize-base;
+  padding: 5px 10px;
+  display: block;
+}
+.catalogLeftMenu-a--active {
+  border: 2px solid @color-brandPrimary;
+  text-decoration: none;
+  position: relative;
+  padding: 3px 8px;
+}

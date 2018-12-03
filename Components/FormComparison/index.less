@@ -1,0 +1,223 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.formComparison {
+  width: 493px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.formComparison--border {
+  border: 1px solid @color-defaultBorder;
+  width: 539px;
+  margin: 17px 50px;
+}
+.formComparison-paddingBottom {
+  padding-bottom: 20px;
+}
+.formComparison-captions {
+  width: 130px;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: @fontSize-smaller;
+  letter-spacing: @letterSpacing-smallest;
+  text-align: end;
+  line-height: @lineHeight-small;
+  color: @color-text2;
+}
+.formComparison--border .formComparison-captions {
+  width: 135px;
+  height: 77px;
+  background-color: @color-inputBackground;
+  padding: 0 20px;
+  color: @color-text1;
+}
+.formComparison-captionsPaddingTop {
+  padding-top: 15px;
+}
+.formComparison-captionsPaddingBottom {
+  padding-bottom: 7px;
+}
+.formComparison-captionsPaddingBottomBig {
+  padding-bottom: 18px;
+}
+.formComparison-controls {
+  width: 320px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+.formComparison--border .formComparison-controls {
+  width: 339px;
+  height: 57px;
+  padding-top: 9px;
+  padding-left: 25px;
+}
+.formComparison-controlsPaddingBottom {
+  padding-bottom: 11px;
+}
+.formComparison-controlsInput {
+  width: 65px;
+  height: 35px;
+  font-size: @fontSize-small;
+  letter-spacing: @letterSpacing-base;
+  border-radius: 3px;
+  border: 1px solid @color-inputBorder;
+  background-color: @color-inputBackground;
+  padding: 0 8px;
+}
+.formComparison-controlsInput::-webkit-inner-spin-button, .formComparison-controlsInput::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance:textfield !important;
+}
+.formComparison-controlsInput:focus {
+  outline: none !important;
+  border: 1px solid @color-inputFocus;
+  box-shadow: 0 0 0 1px @color-inputFocusShadow;
+}
+.formComparison-controlsInput--select {
+  width: 290px;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background-image: url('../assets/images/icon-arrowDown.png');
+  background-repeat: no-repeat;
+  background-position: 95.5% 54%;
+  background-size: 9px;
+}
+.formComparison-controlsInput--select:focus {
+  outline: none !important;
+}
+.formComparison-controlsInput--checkbox {
+  height: 16px;
+  width: 16px;
+  margin: 0 1px;
+  visibility: hidden;
+  position: relative;
+  bottom: 7px;
+}
+.formComparison-controlsInput--checkbox + .checkbox-icon {
+  background-image: url('../assets/images/checkbox-empty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 19px;
+  height: 18px;
+  position: relative;
+  right: 19px;
+  bottom: 7px;
+  cursor: pointer !important;
+}
+.formComparison-controlsInput--checkbox:checked + .checkbox-icon {
+  right: 19px !important;
+  background-image: url('../assets/images/checkbox-checked.png') !important;
+}
+.formComparison-controlsDescription {
+  position: relative;
+  right: 7px;
+  bottom: 6px;
+  letter-spacing: @letterSpacing-smallest;
+}
+.formComparison-controlsDescription > label {
+  cursor: pointer;
+}
+.formComparison-costWrapper {
+  padding-left: 10px;
+}
+.formComparison-cost {
+  font-family: Circe, sans-serif;
+  font-size: @fontSize-large;
+  font-weight: 600;
+  letter-spacing: @letterSpacing-large;
+}
+.formComparison-purchaseButtonWrapper {
+  padding-left: 45px;
+  padding-bottom: 4px;
+}
+.formComparison-purchaseButton {
+  cursor: pointer;
+  border: none;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: @color-brandPrimary;
+  margin-right: 20px;
+  margin-left: 7px;
+  text-transform: uppercase;
+  letter-spacing: @letterSpacing-larger;
+  font-size: @fontSize-smallest;
+  font-weight: 500;
+  color: @color-defaultBackground;
+}
+.formComparison-purchaseButton:focus {
+  outline: none;
+}
+.formComparison-borderTop {
+  border-top: 1px solid @color-defaultBorder;
+}
+
+/*
+* Slider (irs) classes are assigned by javascript during the page loading and I
+* can't change their names to override css properties.
+*/
+.irs {
+  height: 55px;
+}
+.irs-with-grid {
+  height: 75px;
+  width: 190px;
+  bottom: 7px;
+  margin-left: 17px;
+  padding-right: 1px;
+}
+.irs-line {
+  height: 2px; 
+  top: 37px;
+  background: @color-defaultBorder;
+}
+.irs-line-left, .irs-line-mid, .irs-line-right {
+  height: 8px;
+}
+.irs-bar {
+  height: 6px;
+  top: 35px !important;
+  background: @color-brandPrimary;
+}
+.irs-bar-edge {
+  height: 6px;
+  top: 35px !important;
+  width: 14px;
+  background: @color-brandPrimary;
+  border-radius: 10px;
+}
+.irs-slider {
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer !important;
+  background-image: url('../assets/images/icon-irsSlider.png');
+  background-position: center;
+  background-size: cover;
+}
+.irs-grid {
+  height: 27px;
+}
+.irs-grid-pol {
+  opacity: 0.5;
+  background: unset !important;
+}
+.irs-grid-pol.small {
+  background: unset !important;
+}
+.irs-grid-text {
+  bottom: 18px !important;
+  font-size: 0.7em !important;
+  color: @color-text3 !important;
+}

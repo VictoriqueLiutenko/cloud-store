@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar layout-contentPadding viewportHeight">
+        <h1 class="title">Подтверждение подписки</h1>
+        <section>
+          <h3 class="subscriptionSettings-subtitle">
+            Проверьте пареметры подключения
+          </h3>
+          <p class="subscriptionSettings-text">
+            Вы подключаете «ESET NOD32 Антивирус лицензия на 3 ПК» за 
+            <span class="subscriptionSettings-chargeDetailsCost">
+              99 руб
+            </span>
+            в месяц
+          </p>
+          <p class="subscriptionSettings-text">
+            После подключения с Вашего счета будет списано 
+            <span class="subscriptionSettings-chargeDetailsCost">
+              30 руб.
+            </span>
+            Затем Вы получаете доступ к установочному файлу, и подписка станет активной. 
+          </p>
+        </section>
+        <section>
+          <h3 class="subscriptionSettings-subtitle subscriptionSettings-subtitle--differentMargin">
+            Укажите дополнительную информацию
+          </h3>
+          <form name="formCustomer" action="#" class="subscriptionSettings-formCustomer">
+            <div class="formInput">
+              <label for="E-mail" class="formInput-label">Ваш e-mail</label>
+              <input type="email" name="E-mail" id="E-mail" class="formInput-input">
+            </div>
+            <div class="formInput--checkbox formInput--checkboxNarrowInOneLine">
+              <input 
+                type="checkbox" 
+                name="accept" 
+                id="accept" 
+                class="formInput-input--checkbox js-invisibleCheckbox"
+              >
+              <span class="checkbox-icon js-checkboxIcon"></span>
+              <label for="accept" class="formInput-label--checkbox">
+                Я принимаю условия <a href="#">договора оферты</a>
+              </label>
+            </div>
+            <div class="dashboardForm-submit dashboardForm-submit--wideWithMargin">
+              <input type="submit" value="Подключить" class="buttonPrimary">
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="sidebar sidebar--alignedWithHeader">
+        <div class="sidebar-image--small">
+          <img src="../assets/images/image-nod32.png">
+        </div>
+        <div class="sidebar-subscriptionProductName">
+          ESET NOD32 Антивирус лицензия на 3 ПК
+        </div>
+        <div class="sidebar-border"></div>
+        <a href="#" class="sidebar-link js-sidebarHintLink">
+          Для чего нужен e-mail?
+        </a>
+        <div class="sidebar-hint js-sidebarHint">
+          На указанный e-mail придет письмо с данными для скачвания и активации ПО.
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

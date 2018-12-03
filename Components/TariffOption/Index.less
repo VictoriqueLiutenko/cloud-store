@@ -1,0 +1,49 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.tariffOption {
+  min-height: 156px;
+  display: flex;
+  margin: 0 50px;
+  width: 540px;
+  border: 1px solid @color-defaultBorder;
+  margin-bottom: -1px;
+}
+.tariffOption--active {
+  border: 2px solid @color-brandPrimary;
+  width: 538px;
+  margin-bottom: 0px;
+}
+.tariffOption-grayCell {
+  max-height: 100%;
+  width: 39%;
+  background-color: @color-inputBackground;
+}
+.tariffOption-subtitle {
+  font-size: @fontSize-large;
+  margin: 19px 0 0 28px;
+}
+.tariffOption-list {
+  padding: 17px 0 20px 20px;
+  > ul {
+  padding-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  list-style: none;
+    > li {
+      background: url(../assets/images/list-style-type-circle.png) no-repeat;
+      background-position: 0% 15px;
+      background-size: 6px 6px;
+      padding-left: 15px;
+      padding-top: 8px;
+      margin-bottom: 7px;
+      font-size: @fontSize-base;
+      letter-spacing: @letterSpacing-smaller;
+      line-height: @lineHeight-base;
+    }
+  }
+}
+.tariffOption-buttonWrapper {
+  margin: 10px 0 0 10px;
+}

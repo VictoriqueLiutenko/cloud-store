@@ -1,0 +1,26 @@
+{
+  "name": "cloud-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictoriqueLiutenko/cloud-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictoriqueLiutenko/cloud-store/issues"
+  },
+  "homepage": "https://github.com/VictoriqueLiutenko/cloud-store#readme",
+  "dependencies": {
+    "ion-rangeslider": "^2.2.0",
+    "jquery": "^3.2.1",
+    "remodal": "^1.1.1",
+    "slick-carousel": "^1.8.1",
+    "slick-lightbox": "^0.2.10"
+  }
+}

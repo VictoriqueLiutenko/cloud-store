@@ -1,0 +1,44 @@
+{
+  "name": "building-tool",
+  "version": "1.0.0",
+  "description": "<none>",
+  "main": "index",
+  "scripts": {
+    "lint": "eslint .",
+    "build-less": "node ./less/build.js",
+    "build-js": "node ./js/build.js",
+    "build-xsl": "node ./xsl/build.js",
+    "watch": "node ./watch.js"
+  },
+  "keywords": [],
+  "author": "Kirill Rogovoy",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "chokidar": "^1.5.2",
+    "co": "^4.6.0",
+    "co-pg": "2.0.0",
+    "colors": "^1.1.2",
+    "cssnano": "^3.7.4",
+    "fs-extra-promise": "^0.4.0",
+    "glob": "^7.0.4",
+    "less": "^2.7.1",
+    "mz": "^2.4.0",
+    "pg": "4.5.5",
+    "postcss": "^5.1.2",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "promised-pipe": "^1.0.0",
+    "q": "^1.4.1",
+    "ramda": "^0.21.0",
+    "request": "^2.75.0"
+  },
+  "devDependencies": {
+    "debug": "^2.2.0",
+    "eslint": "^2.13.0",
+    "eslint-config-eslint": "^3.0.0",
+    "eslint-teamcity": "^1.3.1"
+  }
+}

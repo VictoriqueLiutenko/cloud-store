@@ -1,0 +1,164 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.subscriptionDetails {
+  margin: 30px 47px 20px 54px;
+  border: 1px solid @color-subscriptionDetailsBorder;
+}
+.subscriptionDetails--subscriptionStatus-lock_finance {
+  border: 1px solid @color-lockFinanceBorder;
+}
+.subscriptionDetails-flex {
+  display: flex;
+  align-items: end;
+  padding-top: 10px;
+}
+.subscriptionDetails-left {
+  padding: 3px 25px 0 15px;
+  width: 58%;
+}
+.subscriptionDetails-name {
+  float: right;
+  width: 92%;
+  padding-right: 19px;
+  > a {
+    font-size: @fontSize-large;
+    letter-spacing: @letterSpacing-micro;
+    line-height: @lineHeight-larger;
+    color: @color-defaultText;
+    text-decoration-color: @color-defaultText;
+  }
+}
+.subscriptionDetails-comment {
+  font-size: @fontSize-small;
+  color: @color-text2;
+  padding-left: 20px;
+  padding-top: 7px;
+  clear: both;
+}
+.subscriptionDetails-status {
+  clear: both;
+  font-size: @fontSize-small;
+  color: @color-defaultText;
+  letter-spacing: @letterSpacing-micro;
+  padding: 8px 0 12px 20px;
+}
+.subscriptionDetails-right {
+  padding: 6px 19px 0 0;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.subscriptionDetails-cost {
+  font-size: @fontSize-large;
+  font-weight: 600;
+  font-family: 'Circe', sans-serif;
+  padding-top: 8px;
+  width: 46%;
+  text-align: end;
+}
+.subscriptionDetails-statusChangeButton {
+  color: @color-invertedText;
+  background-color: @color-statusChangeButton;
+  border-radius: 20px;
+  border: none;
+  width: 110px;
+  margin-top: 4px;
+  margin-left: 10px;
+  padding-top: 2px;
+  font-size: @fontSize-micro;
+  font-family: 'Circe', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: @lineHeight-small;   
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+.subscriptionDetails-statusChangeButtonIcon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+.subscriptionDetails-statusChangeButtonIcon--cancelSuspend {
+  background-image: url(../assets/images/icon-statusChangeButton-cancelSuspend.png);
+  width: 20px;
+  height: 12px;
+  margin-left: 10px;
+}
+.subscriptionDetails-statusChangeButtonIcon--activate {
+  background-image: url(../assets/images/icon-statusChangeButton-activate.png);
+  width: 11px;
+  height: 8px;
+  margin: 0 5px 0 15px;
+}
+.subscriptionDetails-configureButton {
+  width: 34px;
+  height: 34px;
+  border: 1px solid @color-defaultBorder;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 4px;
+  background-image: url(../assets/images/icon-gear.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 47% 47%;
+  background-color: @color-defaultBackground;
+  cursor: pointer; 
+  &:focus {
+    outline: none;
+  }
+}
+.subscriptionDetails-configureButton--active {
+  background-color: @color-defaultBorder;
+  border: none;
+}
+.subscriptionDetails-configureBlock {
+  display: none;
+}
+.subscriptionDetails-configuration {
+  padding: 0 25px 10px 35px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: @color-subscriptionDetailsBackground;
+}
+.subscriptionDetails-configurationItem {
+  padding-top: 10px;
+}
+.subscriptionDetails-configurationName {
+  color: @color-text2;
+  font-size: @fontSize-small;
+  letter-spacing: @letterSpacing-smallest;
+}
+.subscriptionDetails-configurationValue {
+  font-size: @fontSize-smallest;
+  font-weight: 600;
+  padding-right: 37px;
+}
+.subscriptionDetails-subSubscriptionList {
+  padding: 15px 0 10px 34px;
+  width: 75%;
+}
+.subscriptionDetails-subSubscription {
+  padding-bottom: 10px;
+}
+.subscriptionDetails-subSubscriptionName {
+  font-size: 0.9em;
+  letter-spacing: @letterSpacing-smallest;
+}
+.subscriptionDetails-subSubscriptionCost {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.subscriptionDetails-subSubscriptionStatus {
+  font-size: @fontSize-smallest;
+  color: @color-defaultText;
+  letter-spacing: @letterSpacing-small;
+  padding-left: 22px;
+}

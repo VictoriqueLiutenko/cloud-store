@@ -1,0 +1,216 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.formInput {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 13px;
+  &:after {
+    width: 13px;
+    position: relative;
+    left: 10px;
+    height: 9px;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
+.formInput--withMargin {
+  margin-right: 55px;
+}
+.formInput.successMark:after {
+  background-image: url('../assets/images/icon-successMark.png');
+}
+.formInput.errorMark:after {
+  background-image: url('../assets/images/icon-errorMark.png');
+}
+.formInput--textarea {
+  height: 150px !important;
+}
+.formInput--radio {
+  margin: 2px 0 28px 24px;
+  display: flex;
+}
+.formInput--checkbox {
+  margin-top: 7px;
+  width: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*The use of nesting is required. The style should only be used with parent that is prefix --narrow.*/
+.formInput--checkboxNarrow {
+  width: 293px;
+  > .formInput-label--checkbox {
+    margin-top: 5px;
+  }
+  > .formInput-input--checkbox + .checkbox-icon {
+    width: 23px;
+    bottom: 4px;
+  }
+}
+/*
+  The use of nesting is required. The style should only be used with parent that is prefix 
+  --checkboxNarrowInOneLine.
+*/
+.formInput--checkboxNarrowInOneLine {
+  width: 293px;
+  > .formInput-label--checkbox {
+    max-width: 260px;
+  }
+}
+/*The use of nesting is required. The style should only be used with parent that is prefix --checkboxWide.*/
+.formInput--checkboxWide {
+  width: 386px;
+  margin-top: 19px;
+  > .formInput-label--checkbox {
+    max-width: 260px;
+  }
+}
+.formInput-label {
+  font-size: @fontSize-smaller;
+  color: @color-text2;
+  padding-right: 15px;
+  max-width: 110px;
+  text-align: end;
+  line-height: @lineHeight-base;
+}
+.formInput-label--wide {
+  max-width: 160px;
+}
+.formInput-label--checkbox {
+  font-size: @fontSize-smaller;
+  color: @color-text1;
+  max-width: 250px;
+  cursor: pointer;
+  > a, a:active, a:visited {
+    color: @color-text1;
+    text-decoration-style: dotted;
+  }
+}
+.formInput-label--textarea {
+  position: relative;
+  bottom: 35px;
+}
+.formInput-label--radio {
+  font-size: @fontSize-small;
+  letter-spacing: @letterSpacing-larger;
+  line-height: @lineHeight-base;
+  width: 460px;
+  cursor: pointer;
+}
+.formInput-input {
+  width: 270px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid @color-inputBorder;
+  background-color: @color-inputBackground;
+  font-size: @fontSize-large;
+  padding: 0 8px;
+  &:focus {
+    width: 270px;
+    outline: none !important;
+    border: 1px solid @color-inputFocus;
+    box-shadow: 0 0 0 1px @color-inputFocusShadow;
+  }
+}
+.formInput-input--narrow {
+  width: 120px;
+}
+.formInput-input--error {
+  border: 1px solid @color-inputError;
+  box-shadow: 0 0 0 1px @color-inputError;
+}
+.formInput-input--select {
+  width: 290px;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background-image: url('../assets/images/icon-arrowDown.png');
+  background-repeat: no-repeat;
+  background-position: 94% 52%;
+  background-size: 9px;
+  padding-right: 30px;
+  font-size: @fontSize-base;
+  &:focus {
+    width: 290px;
+  }
+}
+.formInput-input--textarea {
+  resize: none;
+  height: 105px;
+  padding: 10px;
+  font-size: @fontSize-large;
+}
+.formInput-input--textarea::-webkit-scrollbar { 
+  width: 5px; 
+  height: 3px;
+}
+.formInput-input--textarea::-webkit-scrollbar-button {
+  background-color: transparent; 
+}
+.formInput-input--textarea::-webkit-scrollbar-track-piece { 
+  background-color: transparent;
+}
+.formInput-input--textarea::-webkit-scrollbar-thumb { 
+  height: 40px; 
+  background-color: @color-customScroll;
+  border-radius: 2px;
+}
+.formInput-input--radio {
+  height: 18px;
+  width: 18px;
+  margin: 0 -7px;
+  visibility: hidden;
+}
+.formInput-input--radio + .radiobutton-icon {
+  background-image: url('../assets/images/radiobutton-empty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  right: 11px;
+  cursor: pointer;
+}
+.formInput-input--radio {
+  &:checked + .radiobutton-icon {
+    background-image: url('../assets/images/radiobutton-active.png');
+  }
+}
+.formInput-input--checkbox {
+  height: 16px;
+  width: 16px;
+  margin: 5px -3px;
+  visibility: hidden;
+}
+.formInput-input--checkbox + .checkbox-icon {
+  background-image: url('../assets/images/checkbox-empty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 19px;
+  height: 18px;
+  position: relative;
+  right: 11px;
+  bottom: 1px;
+  cursor: pointer;
+}
+.formInput-input--checkbox {
+  &:checked + .checkbox-icon {
+    right: 11px;
+    background-image: url('../assets/images/checkbox-checked.png');
+  }
+}
+.formInput-input--comment {
+  margin: -20px 0 0 45px;
+  width: 425px;
+  &:focus {
+    width: 425px;
+  }
+}

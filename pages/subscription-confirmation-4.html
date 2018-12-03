@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar layout-contentPadding viewportHeight">
+        <h1 class="title">Подтверждение подписки</h1>
+        <p class="subscriptionSettings-text">
+          Вы уже подписаны на «ESET NOD32 Антивирус лицензия на 3 ПК»
+        </p>
+        <section>
+          <h3 class="subscriptionSettings-subtitle">
+            На самом деле вы хотите
+          </h3>
+          <form name="formCustomer" action="#" class="subscriptionSettings-formCustomer--radio">
+            <div class="formInput--radio">
+              <input 
+                type="radio" 
+                name="subscriptionOption" 
+                id="prolongate" 
+                value="prolongate" 
+                class="formInput-input--radio js-invisibleRadioButton"
+              >
+              <span class="radiobutton-icon js-radioHint"></span>
+              <label for="prolongate" class="formInput-label--radio js-radioHint">
+                Продлить действие существующей подписки
+              </label>
+            </div>
+            <div class="formInput--radio">
+              <input 
+                type="radio" 
+                name="subscriptionOption" 
+                id="subscribe" 
+                value="subscribe" 
+                class="formInput-input--radio js-invisibleRadioButton"
+              >
+              <span class="radiobutton-icon js-radioHint"></span>
+              <label for="subscribe" class="formInput-label--radio js-radioHint">
+                Подключить еще одну подписку и оплачивать дополнительно 107 рублей в месяц
+              </label>
+            </div>
+            <div class="dashboardForm-submit dashboardForm-submit--low">
+              <input type="submit" value="Подключить" class="buttonPrimary">
+              <a href="#" class="dashboardForm-submitLink dashboardForm-submitLink--black">Отмена</a>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="sidebar sidebar--alignedWithHeader">
+        <div class="sidebar-image--small">
+          <img src="../assets/images/image-nod32.png">
+        </div>
+        <div class="sidebar-subscriptionProductName">
+          ESET NOD32 Антивирус лицензия на 3 ПК
+        </div>
+        <div class="sidebar-border"></div>
+        <a href="#" class="sidebar-link js-sidebarHintLink">
+          Для чего нужен e-mail?
+        </a>
+        <div class="sidebar-hint js-sidebarHint">
+          На указанный e-mail придет письмо с данными для скачвания и активации ПО.
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

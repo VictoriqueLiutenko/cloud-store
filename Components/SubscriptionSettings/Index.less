@@ -1,0 +1,155 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.subscriptionSettings {
+  margin: 30px 60px 0 48px;
+}
+.subscriptionSettings-chargeDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  margin-left: 12px;
+}
+.subscriptionSettings-chargeDetailsName {
+  font-weight: 400;
+  letter-spacing: @letterSpacing-smallest;
+  font-size: @fontSize-smaller;
+}
+.subscriptionSettings-chargeDetailsDots {
+  flex-grow: 1;
+  border-bottom: 1px dotted @color-bottomDotsBorder;
+  position: relative;
+  bottom: 4px;
+  margin: 0 2px;
+}
+.subscriptionSettings-chargeDetailsCost {
+  letter-spacing: @letterSpacing-base;
+  font-weight: 600;
+  font-size: @fontSize-base;
+  line-height: @lineHeight-small;
+}
+.subscriptionSettings-chargeDetailsButton {
+  cursor: pointer;
+  border: none;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: @color-brandPrimary;
+  text-transform: uppercase;
+  letter-spacing: @letterSpacing-largest;
+  font-size: @fontSize-micro;
+  font-weight: 500;
+  color: @color-invertedText;
+  margin-top: 13px;
+  margin-left: 5px;
+  width: 137px;
+  &:focus {
+    outline: none !important;
+  }
+}
+.subscriptionSettings-subscriptionsListLink {
+  margin-left: 19px;
+  font-size: @fontSize-smaller;
+  font-weight: 400;
+   letter-spacing: @letterSpacing-larger;
+  color: @color-defaultText;
+  text-decoration-style: dotted;
+}
+.subscriptionSettings-text {
+  margin: 0 52px 12px;
+  font-size: @fontSize-smaller;
+  line-height: @lineHeight-large;
+  letter-spacing: @letterSpacing-base;
+}
+.subscriptionSettings-padding {
+  padding-top: 5px;
+}
+.subscriptionSettings-subtitle {
+  margin: 30px 0 16px 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Circe', sans-serif;
+}
+.subscriptionSettings-subtitle--differentMargin {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.subscriptionSettings-formCustomer {
+  width: 75%;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.subscriptionSettings-formCustomerWithFormComparison {
+  width: 80%;
+  margin-left: 24px;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.subscriptionSettings-formCustomer--radio {
+  width: 78%;
+  margin: auto;
+  margin-left: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.subscriptionSettings-personalCodeStatus {
+  padding-left: 15px;
+  width: 135px;
+  font-family: 'Circe', sans-serif;
+  font-size: @fontSize-small;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.subscriptionSettings-personalCodeStatusApply {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: @fontSize-small;
+  letter-spacing: @letterSpacing-base;
+  color: @color-brandPrimary;
+  text-decoration: underline dotted;
+}
+.subscriptionSettings-personalCodeStatusValidationText {
+  padding-left: 7px;
+}
+.subscriptionSettings-personalCodeStatusValidationImage {
+  background-image: url('../assets/images/gif-personalCodeLoader.gif');
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: center;
+  display: block;
+  width: 13px;
+  height: 13px;
+}
+.subscriptionSettings-personalCodeStatusAcceptedText {
+  color: @color-personalCodeAcceptedText;
+  padding-left: 7px;
+}
+.subscriptionSettings-personalCodeStatusAcceptedImage {
+  background-image: url('../assets/images/icon-personalCodeAccepted.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  width: 13px;
+  height: 13px;
+}
+.subscriptionSettings-personalCodeStatusInvalidText {
+  color: @color-inputError;
+  padding-left: 7px;
+}
+.subscriptionSettings-personalCodeStatusInvalidImage {
+  background-image: url('../assets/images/icon-personalCodeInvalid.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 45%;
+  display: block;
+  width: 13px;
+  height: 13px;
+}

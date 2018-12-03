@@ -1,0 +1,63 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.tariffFeatures {
+  border: 1px solid @color-defaultBorder;
+  margin: 9px 0 7px 52px;
+  width: 81%;
+  display: none;
+}
+.tariffFeatures-blockArrow {
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: relative;
+  bottom: 6px;
+  left: 150px;
+  background-color: @color-defaultBackground;
+  border-left: 1px solid @color-defaultBorder;
+  border-top: 1px solid @color-defaultBorder;
+  transform: rotate(45deg);
+}
+.tariffFeatures-header {
+  margin: 16px 28px 6px;
+  letter-spacing: @letterSpacing-smallest;
+}
+.tariffFeatures-parameters {
+  margin: 20px 29px 5px 29px;
+}
+.tariffFeatures-parameter {
+  display: flex;
+  padding-bottom: 13px;
+  font-size: @fontSize-smaller;
+}
+.tariffFeatures-parameterName {
+  width: 53%;
+   letter-spacing: @letterSpacing-smaller;
+}
+.tariffFeatures-parameterProperty {
+  font-weight: 600;
+  letter-spacing: @letterSpacing-smallest;
+}
+.tariffFeatures-list {
+  margin-left: 20px;
+  margin-bottom: 40px;
+	> ul {
+		padding-left: 12px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    list-style: none;
+		> li {
+	  	font-size: @fontSize-smaller;
+	    letter-spacing: @letterSpacing-base;
+	    line-height: @lineHeight-larger;
+      margin-bottom: 7px;
+      padding-top: 6px;
+      padding-left: 15px;
+      background: url(../assets/images/list-style-type-circle.png) no-repeat;
+      background-position: 0% 15px;
+      background-size: 6px 6px;
+		}
+	}
+}

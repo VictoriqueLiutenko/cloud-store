@@ -1,0 +1,160 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.js .screenshotCarousel-sliderSingle > div:nth-child(1n+2) { 
+  display: none 
+}
+
+.js .screenshotCarousel-sliderSingle.slick-initialized > div:nth-child(1n+2) { 
+  display: block 
+}
+
+.screenshotCarousel-image {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+}
+.screenshotCarousel-navImageWrapper {
+	height: 100px;
+	width: 125px;
+	position: relative;
+}
+.screenshotCarousel-navImage {
+	max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.screenshotCarousel-sliderBlur {
+	position: absolute;
+  left: 40px;
+  height: 120px;
+  width: 25px;
+  background: white;
+  filter: blur(5px);
+  opacity: 1;
+  z-index: 1;
+}
+.screenshotCarousel-sliderBlur--right {
+  left: 533px;
+}
+.slickLightbox-closeButton {
+  background-image: url('../assets/images/icon-crossWhite.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute; 
+  top: 58px; 
+  right: 28px;
+  cursor: pointer;
+}
+.screenshotCarousel-navArrow {
+  position: absolute;
+  top: 45%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    background-image: url('../assets/images/icon-arrowLeft.png');
+    display: block;
+    width: 7px;
+    height: 12px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.screenshotCarousel-navPrevArrow {
+  left: -19px;
+}
+.screenshotCarousel-navNextArrow {
+  left: 513px;
+  &:before {
+    transform: rotate(180deg);
+  }
+}
+.screenshotCarousel-arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    background-image: url('../assets/images/icon-arrowRightBig.png');
+    display: block;
+    width: 10px;
+    height: 19px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.screenshotCarousel-nextArrow {
+  right: -30px;
+  &:before {
+    transform: rotate(180deg);
+  }
+}
+.screenshotCarousel-prevArrow {
+  left: -20px;
+}
+
+/*Some classes are assigned by javascript during the page loading and 
+we can't change their names to override css properties.*/
+
+.slick-slide {
+	&:focus {
+		outline: none !important;
+	}
+}
+.screenshotCarousel-sliderNav .slick-slide { 
+	cursor: pointer;
+	opacity: 0.5;
+	height: 100px;
+  margin: 10px;
+}
+.slick-slide.is-active {
+	opacity: 1;
+}
+.slick-lightbox-inner {
+  width: 86%;
+  margin: auto;
+  right: 0;
+}
+.slick-lightbox-slick > .slick-arrow {
+  z-index: 4;
+}
+.slick-lightbox-slick > .slick-next:before, .slick-lightbox-slick > .slick-prev:before {
+  content: "";
+  background-image: url('../assets/images/icon-arrowRightWhite.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 17px;
+  height: 33px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.slick-lightbox-slick > .slick-next:before {
+  right: 15px;
+  transform: rotate(0deg);
+}
+.slick-lightbox-slick > .slick-prev:before {
+  left: 17px;
+  transform: rotate(180deg);
+}

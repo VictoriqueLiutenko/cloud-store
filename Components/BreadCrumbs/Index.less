@@ -1,0 +1,28 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.breadCrumbs {
+  margin-left: 48px;
+}
+.breadCrumbs-link {
+  > a {
+    font-size: @fontSize-smaller;
+    color: @color-defaultText;
+    text-decoration: none;
+    letter-spacing: @letterSpacing-smaller;
+  }
+}
+.breadCrumbs-arrowRight {
+  background-image: url('../assets/images/icon-arrowRight.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  display: inline-block;
+  height: 14px;
+  width: 19px;
+  transform: scale(0.5);
+}

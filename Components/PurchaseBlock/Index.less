@@ -1,0 +1,140 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.purchaseBlock {
+  border: 1px solid @color-defaultBorder;
+  width: 537px;
+  height: 83px;
+  margin: 17px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purchaseBlock--alternative {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 16px 0;
+}
+.purchaseBlock--promoDescription {
+  margin: -18px 50px 0px 50px;
+  display: inline-block;
+  height: 119px;
+}
+.purchaseBlock--sidebar--displayed {
+  display: flex;
+}
+.purchaseBlock--sidebar {
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+  border-bottom: 1px solid @color-defaultBorder;
+  display: none;
+}
+.purchaseBlock-costWrapper {
+	min-width: 173px;
+}
+.purchaseBlock-cost {  
+	padding-left: 26px;
+  padding-bottom: 3px;
+}
+.purchaseBlock-cost--narrow {  
+  padding-left: 0;
+}
+.purchaseBlock-costSmall {
+  font-size: @fontSize-smaller;
+  color: @color-text2;
+}
+.purchaseBlock-costSmall--sidebar {
+  font-size: @fontSize-micro;
+  padding: 5px 0 0 40px;
+}
+.purchaseBlock-costLarge {
+	font-size: @fontSize-larger; 
+  font-weight: 600;
+  letter-spacing: @letterSpacing-larger;
+}
+.purchaseBlock-costLarge--sidebar {
+  padding: 3px 0 0 40px;
+  font-size: @fontSize-large;
+}
+.purchaseBlock-buttonWrapper {
+  margin-left: auto;
+}
+.purchaseBlock-description {
+  padding: 17px 14px 6px 26px;
+  font-size: @fontSize-smaller;
+  line-height: @lineHeight-large;
+}
+.purchaseBlock-addOn {
+  > div {
+	  font-family: Circe, sans-serif;
+  	font-size: @fontSize-micro;
+    font-weight: 300;
+    letter-spacing: @letterSpacing-micro;
+    padding-left: 32px;
+	  color: @color-text2;
+	  > a, a:active, a:visited {
+	  	color: @color-text2;
+    	letter-spacing: @letterSpacing-larger;
+	  }
+	}
+}
+.purchaseBlock-addOn--inline {
+  > div {
+    padding-left: 26px;
+  }
+}
+.purchaseBlock-addOn--sidebar {
+  padding: 14px 0 0 8px;
+  > div {
+    > a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+  }
+}
+/*
+  The use of nesting is required. The style should only be used with parent that 
+  is prefix --inProductDescription.
+*/
+.purchaseBlock--inProductDescription {
+  width: 228px;
+  height: 100%;
+  padding: 30px 0;
+  border-left: 1px solid @color-defaultBorder;
+  > .purchaseBlock-costWrapper {
+    > .purchaseBlock-cost {
+      padding-left: 38px;
+    }
+    > .purchaseBlock-costSmall {
+      padding-top: 0;
+    }
+  }
+  > .purchaseBlock-purchaseButtonWrapper {
+    margin-left: 24px;
+    margin-top: 22px;
+  }
+  > .purchaseBlock-addOn {
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+}
+/*The use of nesting is required. The style should only be used with parent that is prefix --narrow.*/
+.purchaseBlock--narrow {
+  width: 519px;
+  height: 77px;
+  justify-content: flex-start;
+  > .purchaseBlock-costWrapper--active {
+    border: 2px solid @color-brandPrimary;
+  }
+  > .purchaseBlock-costWrapper {
+      min-width: 132px;
+      height: 100%;
+    > .purchaseBlock-cost {
+        padding-left: 20px;
+    }
+    > .purchaseBlock-costSmall {
+        padding-top: 16px;
+    }
+  }
+}

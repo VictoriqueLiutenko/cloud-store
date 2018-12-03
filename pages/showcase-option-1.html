@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar">
+        <section class="productDescription">
+          <div class="layout-breadCrumbsWrapper">
+            <div class="breadCrumbs">
+              <span class="breadCrumbs-link"><a href="#">Антивирусы</a></span>
+              <span class="breadCrumbs-arrowRight"></span>
+              <span class="breadCrumbs-link"><a href="#">ESET NOD32</a></span>
+              <span class="breadCrumbs-arrowRight"></span>
+            </div>
+          </div>
+          <h1 class="title">ESET NOD32 Антивирус<br>лицензия на 3 ПК</h1>
+          <div class="formComparison formComparison--border">
+            <div class="formComparison-captions formComparison-captionsPaddingTop">
+              OC
+            </div>
+            <div class="formComparison-controls formComparison-controlsPaddingTop">
+              <select class="formComparison-controlsInput formComparison-controlsInput--select">
+                <option>MS Windows Server 2012</option>
+              </select>
+            </div>
+            <div class="formComparison-captions">
+              Virtual CPU
+            </div>
+            <div class="formComparison-controls">
+              <input 
+                value="1" 
+                id="input-VirtualCPU" 
+                name="input-VirtualCPU" 
+                class="formComparison-controlsInput" 
+                tabindex="1" 
+                type="number"
+              >
+              <input
+                id="rangeSlider-VirtualCPU"
+                class="formComparison-controlsSlider"
+                name="rangeSlider-VirtualCPU"
+                type="text"
+                data-min="1"
+                data-max="100"
+                data-step="3"
+              >
+            </div>
+            <div class="formComparison-captions">
+              RAM, Mb
+            </div>
+            <div class="formComparison-controls">
+              <input 
+                value="1000" 
+                id="input-RAMMb" 
+                name="input-RAMMb" 
+                class="formComparison-controlsInput" 
+                tabindex="2" 
+                type="number"
+              >
+              <input
+                id="rangeSlider-RAMMb"
+                class="formComparison-controlsSlider"
+                name="rangeSlider-RAMMb"
+                type="text"
+                data-min="1"
+                data-max="100"
+                data-step="2"
+                data-multiplier="1000"
+                data-caption="Гб"
+              >
+            </div>
+            <div class="formComparison-captions">
+              Быстрый HDD, Gb
+            </div>
+            <div class="formComparison-controls">
+              <input 
+                value="1" 
+                id="input-FastHDDGb" 
+                name="input-FastHDDGb" 
+                class="formComparison-controlsInput" 
+                tabindex="3" 
+                type="number"
+              >
+              <input
+                id="rangeSlider-FastHDDGb"
+                class="formComparison-controlsSlider"
+                name="rangeSlider-FastHDDGb"
+                type="text"
+                data-min="1"
+                data-max="1000"
+                data-step="3"
+                data-caption="Гб"
+                data-caption-max="Тб"
+              >
+            </div>
+            <div class="formComparison-captions">
+              Медленный HDD, Gb
+            </div>
+            <div class="formComparison-controls">
+              <input 
+                value="1" 
+                id="input-SlowHDDGb" 
+                name="input-SlowHDDGb" 
+                class="formComparison-controlsInput" 
+                tabindex="4" 
+                type="number"
+              >
+              <input
+                id="rangeSlider-SlowHDDGb"
+                class="formComparison-controlsSlider"
+                name="rangeSlider-SlowHDDGb"
+                type="text"
+                data-min="1"
+                data-max="1000"
+                data-step="3"
+                data-caption="Гб"
+                data-caption-max="Тб"
+              >
+            </div>
+            <div class="formComparison-captions">
+              Ширина канала, Mb/s
+            </div>
+            <div class="formComparison-controls">
+              <input 
+                value="1" 
+                id="input-ChannelWidth" 
+                name="input-ChannelWidth" 
+                class="formComparison-controlsInput" 
+                tabindex="5" 
+                type="number"
+              >
+              <input
+                id="rangeSlider-ChannelWidth"
+                class="formComparison-controlsSlider"
+                name="rangeSlider-ChannelWidth"
+                type="text"
+                data-min="1"
+                data-max="100"
+                data-step="2"
+                data-caption="Мб/с"
+              >
+            </div>
+            <div class="formComparison-captions formComparison-captionsPaddingBottom"></div>
+            <div class="formComparison-controls formComparison-controlsPaddingBottom">
+              <input 
+                type="checkbox" 
+                id="PublicIPv4Address" 
+                class="formComparison-controlsInput formComparison-controlsInput--checkbox js-invisibleCheckbox"
+              >
+              <span class="checkbox-icon js-checkboxIcon"></span>
+              <div class="formComparison-controlsDescription">
+                  <label for="PublicIPv4Address">Публичный IPv4 адрес</label>
+              </div>
+            </div>
+            <div class="formComparison-captions formComparison-borderTop formComparison-captionsPaddingTop formComparison-captionsPaddingBottomBig">
+              Итоговая цена<br>в месяц
+            </div>
+            <div class="formComparison-controls formComparison-borderTop formComparison-controlsPaddingTop formComparison-controlsPaddingBottom">
+              <div class="formComparison-costWrapper">
+                <div class="formComparison-cost">€ 102,41</div>
+              </div>
+              <div class="formComparison-purchaseButtonWrapper">
+                <button class="formComparison-purchaseButton">Подключить</button>
+              </div>
+            </div>
+          </div>
+          <div class="togglableDescription">
+            <h3 class="togglableDescription-title">Описание</h3>
+            <p class="togglableDescription-text">
+              ESET NOD32 — решение для защиты домашнего компьютера от вирусов, троянских программ, червей, рекламного ПО, шпионских программ, фишинг-атак, руткитов.
+            </p>
+            <p class="togglableDescription-text">
+              В программе лицензирования произошло важное изменение — лицензия на ESET NOD32 Антивирус является кроссплатформенной. Это позволяет пользователям устанавливать ПО ESET на всех распространенных операционных системах, в рамках предоставляемой лицензии на 3 ПК — Windows, Mac OS X или Linux.
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="sidebar">
+        <div class="sidebar-image js-sidebarImage">
+          <img src="../assets/images/image-nod32.png" class="">
+        </div>
+        <div class="sidebar-anchors">
+          <div>Быстрый переход:</div>
+          <a href="#productDescription" class="sidebar-anchorsActive">Описание продукта</a>
+          <a href="#screenshots">Снимки экрана</a>
+          <a href="#screenshots">Вы недавно смотрели</a>
+          <a href="#screenshots">Помощь в выборе</a>
+          <a href="#screenshots">Преимущества подписки</a>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

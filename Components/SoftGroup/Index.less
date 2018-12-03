@@ -1,0 +1,46 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.softGroup {
+  width: 130px;
+  margin: 10px 15px 30px 35px;
+}
+.softGroup-image {
+  display: block;
+  height: 105px;
+  width: 105px;
+  position: relative;
+  border: 1px solid @color-softGroupImageBorder;
+  > img {
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.softGroup-headerWrapper {
+  text-decoration: none;
+}
+.softGroup-header {
+  margin: 0;
+  margin-top: 5px;
+  font-family: Circe,sans-serif;
+  font-size: @fontSize-smaller;
+  font-weight: 600;
+  letter-spacing: @letterSpacing-smallest;
+  text-transform: uppercase;
+  color: @color-defaultText;
+}
+.softGroup-info {
+  font-size: @fontSize-small;
+  text-transform: none;
+   letter-spacing: @letterSpacing-larger;
+  margin-top: 3px;
+  color: @color-text2;
+}
+

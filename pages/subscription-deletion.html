@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar layout-contentPadding viewportHeight">
+        <h1 class="title">Удаление подписки</h1>
+        <p class="subscriptionSettings-text">
+          Вы хотите удалить подписку «ESET NOD32 Антивирус (лицензия на 3 ПК)»
+        </p>
+        <p class="subscriptionSettings-text">
+          Подписка будет удалена с текущего момента. 
+          Если Вы захотите снова воспользоваться подпиской,
+          то необходимо будет заново пройти процесс подключения.
+        </p>
+        <section>
+          <h3 class="subscriptionSettings-subtitle">
+            Укажите причину удаления
+          </h3>
+          <form name="formCustomer" action="#" class="subscriptionSettings-formCustomer--radio">
+            <div class="formInput--radio">
+              <input 
+                type="radio" 
+                name="subscriptionOption" 
+                id="usedOnlyOnes" 
+                value="usedOnlyOnes" 
+                class="formInput-input--radio js-invisibleRadioButton"
+              >
+              <span class="radiobutton-icon js-radioHint"></span>
+              <label for="usedOnlyOnes" class="formInput-label--radio js-radioHint">
+                Я использовал сервис однократно и он мне больше не нужен
+              </label>
+            </div>
+            <div class="js-formInputWithHint">
+              <div class="formInput--radio">
+                <input 
+                  type="radio" 
+                  name="subscriptionOption" 
+                  id="anotherService" 
+                  value="anotherService" 
+                  class="formInput-input--radio js-invisibleRadioButton"
+                >
+                <span class="radiobutton-icon js-radioHint"></span>
+                <label for="anotherService" class="formInput-label--radio js-radioHint">
+                  Я подключаю у вас другой сервис
+                </label>
+              </div>
+              <div class="dashboardForm-hint dashboardForm-hint--withLink js-formInputHint">
+                Какая-нибудь подсказка для примера. 
+              </div>
+            </div>
+            <div class="js-formInputWithHint">
+              <div class="formInput--radio">
+                <input
+                  type="radio" 
+                  name="subscriptionOption" 
+                  id="serviceDoesntWork" 
+                  value="serviceDoesntWork" 
+                  class="formInput-input--radio js-invisibleRadioButton"
+                >
+                <span class="radiobutton-icon js-radioHint"></span>
+                <label for="serviceDoesntWork" class="formInput-label--radio js-radioHint">
+                  Сервис не работает
+                </label>
+              </div>
+              <div class="dashboardForm-hint dashboardForm-hint--withLink js-formInputHint">
+                Не удаляйте подписку, обратитесь в нашу <a href="#">дружелюбную поддержку</a>
+              </div>
+            </div>
+            <div class="formInput--radio">
+              <input 
+                type="radio" 
+                name="subscriptionOption" 
+                id="anotherReason" 
+                value="anotherReason" 
+                class="formInput-input--radio js-invisibleRadioButton"
+              >
+              <span class="radiobutton-icon js-radioHint"></span>
+              <label for="anotherReason" class="formInput-label--radio js-radioHint">
+                Другая причина
+              </label>
+            </div>
+            <input
+              type="text" 
+              name="anotherReasonComment"
+              id="anotherReasonComment"
+              class="formInput-input formInput-input--comment"
+            >
+            <div class="dashboardForm-submit">
+              <input type="submit" value="Подтвердить" class="buttonPrimary">
+              <a href="#" class="dashboardForm-submitLink dashboardForm-submitLink--black">
+                Вернуться к списку подписок
+              </a>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="sidebar sidebar--alignedWithHeader">
+        <div class="sidebar-image--small">
+          <img src="../assets/images/image-nod32.png">
+        </div>
+        <div class="sidebar-subscriptionProductName">
+          ESET NOD32 Антивирус лицензия на 3 ПК
+        </div>
+        <div class="sidebar-border"></div>
+        <a href="#" class="sidebar-link js-sidebarHintLink">
+          Для чего нужен e-mail?
+        </a>
+        <div class="sidebar-hint js-sidebarHint">
+          На указанный e-mail придет письмо с данными для скачвания и активации ПО.
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

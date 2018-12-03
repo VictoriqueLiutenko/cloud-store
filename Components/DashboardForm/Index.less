@@ -1,0 +1,139 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fontFaces.less';
+@import '../Components/Layout/fonts.less';
+
+.dashboardForm {
+  width: 54.2%;
+  margin: auto;
+  border: 1px solid @color-defaultBorder;
+}
+
+/*The use of nesting is required. The style should only be used with parent that is prefix --popup.*/
+.dashboardForm--popup {
+  width: 99%;
+  > .dashboardForm-header {
+      margin-left: 145px;
+    }
+}
+.dashboardForm-header {
+  margin-left: 150px;
+}
+.dashboardForm-headerTitle {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: 'Circe', sans-serif;
+  font-size: @fontSize-largest;
+  font-weight: 600;
+  letter-spacing: @letterSpacing-micro;
+  margin-left: -2px;
+}
+.dashboardForm-headerLink {
+  font-size: @fontSize-smallest;
+  > a {
+    color: @color-brandPrimary;
+     letter-spacing: @letterSpacing-larger;
+    text-decoration-style: dotted;
+  }
+}
+.dashboardForm-hint {
+  height: 100%;
+  width: 287px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: @fontSize-smallest;
+  color: @color-text2;
+  letter-spacing: @letterSpacing-larger;
+  line-height: @lineHeight-base;
+}
+.dashboardForm-hint--withLink {
+  color: @color-defaultText;
+  width: 100%;
+  height: auto;
+  margin: -20px 0 25px 48px;
+  display: none;
+  > a {
+    color: @color-brandPrimary;
+  }
+}
+.dashboardForm-gap {
+  height: 50px;
+  width: 100%;
+}
+.dashboardForm-error {
+  height: 53px;
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: @fontSize-smaller;
+  color: @color-inputError;
+}
+.dashboardForm-error--withMargin {
+  margin-right: 54px;
+}
+.dashboardForm-inputError {
+  height: 100%;
+  width: 287px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  margin-top: -4px;
+}
+.dashboardForm-headerInfo {
+  width: 285px;
+  margin-top: 25px;
+  font-size: @fontSize-smaller;
+  line-height: @lineHeight-larger;
+  color: @color-text1;
+}
+.dashboardForm-form {
+  margin-top: 5px;
+}
+.dashboardForm-formWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 84.4%;
+}
+.dashboardForm-submit {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 8px;
+  max-width: 520px;
+}
+.dashboardForm-submit--low {
+  height: 60px;
+}
+.dashboardForm-submit--wide {
+  margin-left: 0;
+}
+.dashboardForm-submit--wideWithMargin {
+  width: 100%;
+  margin-left: 52px;
+  height: 80px;
+}
+.dashboardForm-submit--narrow {
+  height: 80px;
+  max-width: 237px;
+}
+.dashboardForm-submit--fillWidth {
+  width: 100%;
+  margin-left: 162px;
+}
+.dashboardForm-submitLink {
+  margin-right: 25px;
+  font-size: @fontSize-small;
+  letter-spacing: @letterSpacing-smallest;
+  color: @color-brandPrimary;
+}
+.dashboardForm-submitLink--black {
+  color: @color-defaultText;
+  font-size: @fontSize-smaller;
+   letter-spacing: @letterSpacing-base;
+  text-decoration-style: dotted;
+}

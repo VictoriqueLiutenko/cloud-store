@@ -1,0 +1,113 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.promoBannerCarousel {
+  padding: 10px 30px;
+}
+.promoBannerCarousel-title {
+  width: 55%;
+  float: right;
+  margin-top: 35px;
+  margin-right: 65px;
+  margin-bottom: 0;
+  font-size: @fontSize-large;
+  font-weight: 500;
+  line-height: @lineHeight-larger;
+  letter-spacing: @letterSpacing-smaller;
+  color: @color-defaultText;
+  text-decoration: none;
+}
+.promoBannerCarousel-image {
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  width: 117px;
+}
+.promoBannerCarousel-info {
+  width: 60%;
+  float: right;
+  margin-right: 40px;
+  margin-top: 9px;
+  font-size: @fontSize-smallest;
+  line-height: @lineHeight-base;
+  color: @color-defaultText;
+  min-height: 1px;
+}
+.promoBannerCarousel-arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    background-image: url(./assets/images/icon-arrowLeft.png);
+    display: block;
+    width: 12px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.promoBannerCarousel-nextArrow {
+  right: 9px;
+  &:before {
+    transform: rotate(180deg);
+  }
+}
+.promoBannerCarousel-prevArrow {
+  left: 15px;
+}
+.promoBannerCarousel-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  top: 85%;
+  /*These li and button were created by the plugin. 
+  We can not give them names to assign styles.*/
+  > li {
+      position: relative;
+      display: inline-block;
+      width: 11px;
+      height: 15px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+      > button {
+          border: none;
+          color: transparent;
+          font-size: 0;
+          background-color: @color-promoBannerSwitch;
+          display: block;
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          padding: 4px;
+          outline: none;
+          cursor: pointer;
+          &:hover, &:focus {
+            outline: none;
+          }
+      }
+      &.slick-active button {
+        background-color: @color-brandPrimary;
+      }
+  }
+}
+/*Some classes are assigned by javascript during the page loading and 
+we can't change their names to override css properties.*/
+
+.slick-slide {
+	&:focus {
+		outline: none !important;
+	}
+}

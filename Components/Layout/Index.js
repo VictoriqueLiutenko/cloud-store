@@ -1,0 +1,5 @@
+require('remodal')
+window.jQuery = require('jquery')
+require('slick-carousel')
+require('slick-lightbox')
+require('ion-rangeslider')

@@ -1,0 +1,90 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.productCompact {
+  width: 30%;
+  margin-top: 17px;
+}
+.productCompact-image {
+  width: 80px;
+  height: 135px;
+  margin: auto;
+  padding: 2px 10px;
+  border: 1px solid @color-productImageBorder;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 11px;
+  > img {
+    align-self: center;
+    max-width: 97px;
+    max-height: 131px;
+  }
+}
+.productCompact-button {
+  display: block;
+  min-width: 102px;
+  margin: auto;
+  text-align: center;
+  padding: 9px 15px;
+  font-family: Circe, sans-serif;
+  font-weight: 500;
+  font-size: @fontSize-micro;
+  text-transform: uppercase;
+  background: @color-brandPrimary;
+  border: none;
+  border-radius: 20px;
+  color: @color-invertedText;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+.productCompact-name {
+  width: 125px;
+  margin: auto;
+  padding-left: 21px;
+  > a {
+    display: block;
+    font-family: 'Circe', sans-serif;
+    font-weight: 600;
+    font-size: @fontSize-smallest;
+    color: @color-defaultText;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: @lineHeight-small;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+.productPromoIcon-small {
+  img {
+    position: relative;
+    right: 22px;
+  }
+  &:before {
+    width: 40px;
+    height: 40px;
+    transform: scale(.5);
+    position: relative;
+    top: 11px;
+    right: 8px;
+    z-index: 100;
+  }
+}
+.productPromoIcon-small--sale {
+  &:before {
+    content: url('../assets/images/badge-saleSmall.png');
+  }
+}
+.productPromoIcon-small--new {
+  &:before {
+    content: url('../assets/images/badge-newSmall.png');
+  }
+}
+.productPromoIcon--freeTrial {
+  &:before {
+    content: url('../assets/images/badge-free-trial.png');
+  }
+}

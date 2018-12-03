@@ -1,0 +1,42 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.catalogFilter--margin {
+  margin-left: 50px !important;
+}
+.catalogFilter {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 17px;
+  max-width: 468px;
+  min-height: 52px;
+  border: 1px solid @color-defaultBorder;
+  > ul {
+    min-height: 52px;
+    margin: 0;
+    padding: 0 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    > li {
+      padding: 5px 10px;
+      list-style-type: none;
+      text-transform: uppercase;
+      font-family: 'Circe', sans-serif;
+      font-size: @fontSize-smallest;
+      font-weight: 500;
+    }
+  }
+}
+.catalogFilter-a {
+  color: @color-text2;
+  text-decoration: underline;
+  text-decoration-style: dotted;;
+}
+.catalogFilter-a--active {
+  color: @color-defaultText;
+  text-decoration: none;
+}

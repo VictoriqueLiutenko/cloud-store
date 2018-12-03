@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar layout-contentPadding">
+        <h1 class="title">Подтверждение подписки</h1>
+        <section>
+          <h3 class="subscriptionSettings-subtitle">
+            Проверьте пареметры подключения
+          </h3>
+          <p class="subscriptionSettings-text">
+            С учетом перерасчета за неполный период стоимость подписки составит
+            <span class="subscriptionSettings-chargeDetailsCost">
+              53.69€
+            </span>
+            до 30.11.2016 включительно.
+          </p>
+          <p class="subscriptionSettings-text">
+            Стоимость подключения: 
+            <span class="subscriptionSettings-chargeDetailsCost">
+              53.69€.
+            </span>
+            После оплаты подписки Вы получите данные для активации продукта. 
+          </p>
+        </section>
+        <section class="layout-paddingBottom">
+          <h3 class="subscriptionSettings-subtitle subscriptionSettings-subtitle--differentMargin">
+            Укажите дополнительную информацию
+          </h3>
+          <form name="formCustomer" action="#" class="subscriptionSettings-formCustomerWithFormComparison">
+            <div class="formInput formInput--withMargin">
+              <label for="E-mail" class="formInput-label">Ваш e-mail</label>
+              <input type="email" name="E-mail" id="E-mail" class="formInput-input">
+            </div>
+            <div class="formInput formInput--withMargin">
+              <label for="dataСenterTitle" class="formInput-label">Название дата-центра</label>
+              <input
+                type="text" 
+                name="dataСenterTitle" 
+                id="dataСenterTitle" 
+                class="formInput-input formInput-input--error"
+              >
+            </div>
+            <div class="dashboardForm-error dashboardForm-inputError dashboardForm-error--withMargin">
+              Укажите название дата-центра
+            </div>
+            <div class="formComparison">
+              <div class="formComparison-captions">
+                OC
+              </div>
+              <div class="formComparison-controls">
+                <select class="formComparison-controlsInput formComparison-controlsInput--select">
+                  <option>MS Windows Server 2012</option>
+                </select>
+              </div>
+              <div class="formComparison-captions">
+                Virtual CPU
+              </div>
+              <div class="formComparison-controls">
+                <input 
+                  value="1" 
+                  id="input-VirtualCPU" 
+                  name="input-VirtualCPU" 
+                  class="formComparison-controlsInput" 
+                  tabindex="1" 
+                  type="number"
+                >
+                <input
+                  id="rangeSlider-VirtualCPU"
+                  class="formComparison-controlsSlider"
+                  name="rangeSlider-VirtualCPU"
+                  type="text"
+                  data-min="1"
+                  data-max="100"
+                  data-step="3"
+                >
+              </div>
+              <div class="formComparison-captions">
+                RAM, Mb
+              </div>
+              <div class="formComparison-controls">
+                <input 
+                  value="1000" 
+                  id="input-RAMMb" 
+                  name="input-RAMMb" 
+                  class="formComparison-controlsInput" 
+                  tabindex="2" 
+                  type="number"
+                >
+                <input
+                  id="rangeSlider-RAMMb"
+                  class="formComparison-controlsSlider"
+                  name="rangeSlider-RAMMb"
+                  type="text"
+                  data-min="1"
+                  data-max="100"
+                  data-step="2"
+                  data-multiplier="1000"
+                  data-caption="Гб"
+                >
+              </div>
+              <div class="formComparison-captions">
+                Быстрый HDD, Gb
+              </div>
+              <div class="formComparison-controls">
+                <input 
+                  value="1" 
+                  id="input-FastHDDGb" 
+                  name="input-FastHDDGb" 
+                  class="formComparison-controlsInput" 
+                  tabindex="3" 
+                  type="number"
+                >
+                <input
+                  id="rangeSlider-FastHDDGb"
+                  class="formComparison-controlsSlider"
+                  name="rangeSlider-FastHDDGb"
+                  type="text"
+                  data-min="1"
+                  data-max="1000"
+                  data-step="3"
+                  data-caption="Гб"
+                  data-caption-max="Тб"
+                >
+              </div>
+              <div class="formComparison-captions">
+                Медленный HDD, Gb
+              </div>
+              <div class="formComparison-controls">
+                <input 
+                  value="1" 
+                  id="input-SlowHDDGb" 
+                  name="input-SlowHDDGb" 
+                  class="formComparison-controlsInput" 
+                  tabindex="4"
+                  type="number"
+                >
+                <input
+                  id="rangeSlider-SlowHDDGb"
+                  class="formComparison-controlsSlider"
+                  name="rangeSlider-SlowHDDGb"
+                  type="text"
+                  data-min="1"
+                  data-max="1000"
+                  data-step="3"
+                  data-caption="Гб"
+                  data-caption-max="Тб"
+                >
+              </div>
+              <div class="formComparison-captions">
+                Ширина канала, Mb/s
+              </div>
+              <div class="formComparison-controls">
+                <input 
+                  value="1" 
+                  id="input-ChannelWidth" 
+                  name="input-ChannelWidth" 
+                  class="formComparison-controlsInput" 
+                  tabindex="5" 
+                  type="number"
+                >
+                <input
+                  id="rangeSlider-ChannelWidth"
+                  class="formComparison-controlsSlider"
+                  name="rangeSlider-ChannelWidth"
+                  type="text"
+                  data-min="1"
+                  data-max="100"
+                  data-step="2"
+                  data-caption="Мб/с"
+                >
+              </div>
+              <div class="formComparison-captions formComparison-captionsPaddingBottom"></div>
+              <div class="formComparison-controls formComparison-controlsPaddingBottom">
+                <input 
+                  type="checkbox" 
+                  id="PublicIPv4Address" 
+                  class="formComparison-controlsInput formComparison-controlsInput--checkbox js-invisibleCheckbox"
+                >
+                <span class="checkbox-icon js-checkboxIcon"></span>
+                <div class="formComparison-controlsDescription">
+                    <label for="PublicIPv4Address">Публичный IPv4 адрес</label>
+                </div>
+              </div>
+            </div>
+            <div class="dashboardForm-submit--fillWidth">
+              <input type="submit" value="Подключить" class="buttonPrimary">
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="sidebar sidebar--alignedWithHeader">
+        <div class="sidebar-image--small">
+          <img src="../assets/images/image-nod32.png">
+        </div>
+        <div class="sidebar-subscriptionProductName">
+          ESET NOD32 Антивирус лицензия на 3 ПК
+        </div>
+        <div class="sidebar-border"></div>
+        <a href="#" class="sidebar-link js-sidebarHintLink">
+          Для чего нужен e-mail?
+        </a>
+        <div class="sidebar-hint js-sidebarHint">
+          На указанный e-mail придет письмо с данными для скачвания и активации ПО.
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.registrationRules {
+  display: none;
+  margin-top: 24px;
+  height: 295px;
+  overflow: auto;
+  padding: 15px 20px 10px 20px;
+  
+  font-size: @fontSize-micro;
+  color: @color-text1;
+  line-height: @lineHeight-small;
+  border-top: 1px solid @color-defaultBorder;
+  border-bottom: 1px solid @color-defaultBorder;
+}
+.registrationRules::-webkit-scrollbar { 
+  width: 5px; 
+  height: 3px;
+}
+.registrationRules::-webkit-scrollbar-button {
+  background-color: transparent; 
+}
+.registrationRules::-webkit-scrollbar-track-piece { 
+  background-color: transparent;
+}
+.registrationRules::-webkit-scrollbar-thumb { 
+  height: 120px; 
+  background-color: @color-customScroll;
+  border-radius: 2px;
+}

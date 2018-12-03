@@ -1,0 +1,37 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.subscriptionOffer-text {
+  margin: 0px 52px 20px 52px;
+  padding-top: 5px;
+  font-size: @fontSize-smaller;
+  line-height: @lineHeight-large;
+  letter-spacing: @letterSpacing-base;
+}
+.subscriptionOffer-link {
+  color: @color-brandPrimary;
+  font-size: @fontSize-base;
+  line-height: @lineHeight-base;
+}
+.subscriptionOffer-subtitle {
+  margin: 30px 0px 10px 52px;
+  letter-spacing: @letterSpacing-small;
+  font-weight: 500;
+}
+.subscriptionOffer-list {
+  font-size: @fontSize-smaller;
+  line-height: @lineHeight-large;
+  padding-left: 58px;
+  margin-bottom: 0;
+  letter-spacing: @letterSpacing-base;
+  list-style: none;
+  > li {
+    background: url(../assets/images/list-style-type-circle.png) no-repeat;
+    background-position: 0% 8px;
+    background-size: 6px 6px;
+    padding-left: 15px;
+    margin-right: 60px;
+    margin-bottom: 11px;
+  }
+}

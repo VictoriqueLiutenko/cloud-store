@@ -1,0 +1,33 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+
+.quickSubscription {
+  padding: 10px 0;
+}
+.quickSubscription-selectsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  margin-bottom: 10px;
+}
+.quickSubscription-select {  
+  width: 270px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid @color-inputBorder;
+  background-color: @color-inputBackground;
+  font-size: @fontSize-base;
+  padding: 0 8px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../assets/images/icon-arrowDown.png);
+  background-repeat: no-repeat;
+  background-position: 94% 52%;
+  background-size: 9px;
+  &:focus {
+    outline: none !important;
+  }
+}

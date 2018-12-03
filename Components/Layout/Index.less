@@ -1,0 +1,81 @@
+@import '../Components/Layout/colors.less';
+@import '../Components/Layout/helpers.less';
+@import '../Components/Layout/fonts.less';
+@import '../Components/Layout/fontFaces.less';
+@import (inline) '../../node_modules/remodal/dist/remodal.css';
+@import (inline) '../../node_modules/remodal/dist/remodal-default-theme.css';
+@import (inline) '../../node_modules/slick-carousel/slick/slick.css';
+@import (inline) '../../node_modules/slick-carousel/slick/slick-theme.css';
+@import (inline) '../../node_modules/slick-lightbox/dist/slick-lightbox.css';
+@import (inline) '../../node_modules/ion-rangeslider/css/ion.rangeSlider.css';
+@import (inline) '../../node_modules/ion-rangeslider/css/normalize.css';
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.body--background {
+  background-color: @color-bodyBackground;
+}
+main {
+  width: 960px;
+  position: relative;
+  margin: auto;
+  background-color: @color-defaultBackground;
+}
+.layout-contentPadding {
+  padding-top: 18px;
+}
+.layout-paddingBottom {
+  padding-bottom: 30px;
+}
+.layout-contentWithRightSidebar {
+  float: left;
+  width: 640px;
+  border-right: 1px solid @color-defaultBorder;
+}
+.layout-modalWindowCustom {
+  padding: 0;
+  margin: 0;
+  width: 320px;
+}
+.layout-dashboardFormWrapper {
+  padding-top: 79px;
+  min-height: 100vh;
+}
+.layout-breadCrumbsWrapper {
+  padding-top: 38px;
+  padding-left: 4px;
+}
+.layout-breadCrumbsWrapper--smallPaddingTop {
+  padding-top: 18px;
+  padding-left: 4px;
+}
+.layout-promoBannerCarouselWrapper {
+  margin: 20px 40px;
+  background-color: @color-bodyBackground;
+  border-radius: 5px;
+  width: 600px;
+  min-height: 240px;
+  visibility: hidden;
+}
+.layout-screenshotCarouselWrapper {
+	width: 500px;
+  margin: 28px 0 0 50px;
+}
+.layout-catalogWrapper {
+  float: right;
+  width: 678px;
+  padding-top: 17px;
+  padding-bottom: 30px;
+  border-left: 1px solid @color-defaultBorder;
+}
+.layout-softGroupWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 66px 0 20px;
+}
+.layout-recommendedToTryWrapper {
+  padding: 30px 0;
+}

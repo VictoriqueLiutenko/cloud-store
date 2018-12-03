@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Витрина</title>
+  </head>
+  <body class="body--background">
+    <main>
+      <section class="layout-contentWithRightSidebar layout-contentPadding viewportHeight">
+        <h1 class="title">Принятие договора оферты</h1>
+        <section class="subscriptionOffer">
+          <p class="subscriptionOffer-text">
+            Для упрощения договорных отношений мы заключаем договор в виде оферты.
+            Основное преимущество публичной оферты — это скорость.
+            Вам не нужно ждать подписания договора двумя сторонами.
+            Вы осуществляете акцепт оферты, и мы уже можем выставлять счет.
+          </p>
+          <h4 class="subscriptionOffer-subtitle">Для заключения договора в виде оферты необходимо:</h4>
+          <ul class="subscriptionOffer-list">
+            <li>
+              Ознакомиться с 
+              <a href="#" class="subscriptionOffer-link">
+                сублицензионным договором.
+              </a>
+            </li>
+            <li>
+              Осуществить акцепт сублицензированного договора путем установки галочки ниже 
+              и нажанием кнопки «Принять».
+            </li>
+          </ul>
+          <form name="offerAcceptance" action="#"  class="dashboardForm-form">
+            <div class="formInput--checkbox formInput--checkboxWide">
+              <input 
+                type="checkbox" 
+                name="accept" 
+                id="accept" 
+                class="formInput-input--checkbox js-invisibleCheckbox"
+              >
+              <span class="checkbox-icon js-checkboxIcon"></span>
+              <label for="accept" class="formInput-label--checkbox">
+                Я принимаю условия договора оферты
+              </label>
+            </div>
+            <div class="dashboardForm-submit dashboardForm-submit--narrow">
+              <input type="submit" value="Подключить" class="buttonPrimary">
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="sidebar">
+        <a href="#" class="sidebar-link js-sidebarHintLink">
+          Часто задаваемые вопросы<br>по договору публичной оферты
+        </a>
+        <div class="sidebar-hint js-sidebarHint">
+          Какой-то ответ по договору публичной оферты
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>

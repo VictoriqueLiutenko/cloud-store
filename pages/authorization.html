@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>Авторизация</title>
+  </head>
+  <body class="body--background">
+    <main class="layout-dashboardFormWrapper">
+      <section class="dashboardForm">
+        <div class="dashboardForm-header">
+          <h3 class="dashboardForm-headerTitle">Вход на сайт</h3>
+          <div class="dashboardForm-headerLink">или <a href="#">регистрация</a></div>
+        </div>
+        <form name="authorization" action="#" class="dashboardForm-form">
+          <div class="dashboardForm-formWrapper">
+            <div class="formInput">
+              <label for="E-mail" class="formInput-label">E-mail</label>
+              <input type="email" name="E-mail" id="E-mail" class="formInput-input">
+            </div>
+            <div class="formInput">
+              <label for="password" class="formInput-label">Пароль</label>
+              <input type="password" name="password" id="password" class="formInput-input">
+            </div>
+            <div class="formInput--checkbox">
+              <input 
+                type="checkbox" 
+                name="rememberMe" 
+                id="rememberMe" 
+                class="formInput-input--checkbox js-invisibleCheckbox"
+              >
+              <span class="checkbox-icon js-checkboxIcon"></span>
+              <label for="rememberMe" class="formInput-label--checkbox">
+                Запомнить меня на этом компьютере
+              </label>
+            </div>
+          </div>
+          <div class="dashboardForm-submit">
+            <input type="submit" value="Войти" class="buttonPrimary">
+            <a href="#" class="dashboardForm-submitLink">Я забыл пароль</a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>
